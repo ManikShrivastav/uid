@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova 2026 - Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TechNova 2026</h1>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+
+        <h2>Feedback Form</h2>
+
+        <form id="feedbackForm">
+
+            <input type="text" id="fbName" placeholder="Student Name">
+
+            <input type="text" id="fbRegno" placeholder="Registration Number">
+
+            <select id="fbEvent">
+                <option value="">Select Event</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="AI Workshop">AI Workshop</option>
+                <option value="Paper Presentation">Paper Presentation</option>
+                <option value="Web Design">Web Design</option>
+                <option value="Gaming Tournament">Gaming Tournament</option>
+            </select>
+
+            <select id="rating">
+                <option value="">Select Rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <textarea id="comments" placeholder="Enter Comments"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+        <div id="feedbackMessage"></div>
+
+        <div id="feedbackSummary"></div>
+
+        <h3>Average Rating: <span id="averageRating">0</span></h3>
+
+    </section>
+
+    <footer>
+        <p>Contact: technova@email.com | +91 0000000000 | Amrita Vishwa Vidyapeetham, Bengaluru</p>
+        <p>&copy UID Hackathon</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#1e3c72;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.navbar{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    padding:0;
+    margin-top:10px;
+}
+
+.navbar li{
+    margin:0 15px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:yellow;
+}
+
+.banner{
+    height:300px;
+    /* background:linear-gradient(to right,#141e30,#243b55); */
+    background-image: url("images/banner.PNG");
+    /* background-repeat: no-repeat; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgb(255, 255, 255);
+    text-align:center;
+}
+
+.banner h2{
+    font-size:40px;
+}
+
+.container{
+    padding:20px;
+}
+
+.announcement{
+    background:white;
+    padding:15px;
+    margin:10px 0;
+    border-left:5px solid #1e3c72;
+}
+
+.events-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.open{
+    color:green;
+    font-weight:bold;
+}
+
+.closed{
+    color:red;
+    font-weight:bold;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,select,textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    padding:12px;
+    border:none;
+    background:#1e3c72;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#16325c;
+}
+
+#message,#feedbackMessage{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.success{
+    color:green;
+}
+
+.error{
+    color:red;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+ .banner-content p{
+        display: none;
+    }
+
+ .banner-content h2{
+        display: none;
+    }
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .banner h2{
+        font-size:28px;
+    }
+
+    .banner h2,p{
+        display: block;
+    }
+    .banner{
+    height:300px;
+    background:linear-gradient(to right,#141e30,#243b55);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgb(255, 255, 255);
+    text-align:center;
+}
+}

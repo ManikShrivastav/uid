@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova 2026 - Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TechNova 2026</h1>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+
+        <h2>Fest Events</h2>
+
+        <div class="events-grid">
+
+            <div class="card">
+                <h3>Hackathon</h3>
+                <p><strong>ID:</strong> E101</p>
+                <p><strong>Category:</strong> Coding</p>
+                <p><strong>Date:</strong> 10 Feb 2026 - 9AM</p>
+                <p><strong>Venue:</strong> Lab 1</p>
+                <p><strong>Fee:</strong> ₹200</p>
+                <p class="open">Status: Open</p>
+            </div>
+
+            <div class="card">
+                <h3>AI Workshop</h3>
+                <p><strong>ID:</strong> E102</p>
+                <p><strong>Category:</strong> Workshop</p>
+                <p><strong>Date:</strong> 11 Feb 2026 - 10AM</p>
+                <p><strong>Venue:</strong> Seminar Hall</p>
+                <p><strong>Fee:</strong> ₹150</p>
+                <p class="open">Status: Open</p>
+            </div>
+
+            <div class="card">
+                <h3>Paper Presentation</h3>
+                <p><strong>ID:</strong> E103</p>
+                <p><strong>Category:</strong> Technical</p>
+                <p><strong>Date:</strong> 12 Feb 2026 - 11AM</p>
+                <p><strong>Venue:</strong> Hall A</p>
+                <p><strong>Fee:</strong> ₹100</p>
+                <p class="closed">Status: Closed</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Design</h3>
+                <p><strong>ID:</strong> E104</p>
+                <p><strong>Category:</strong> Design</p>
+                <p><strong>Date:</strong> 12 Feb 2026 - 2PM</p>
+                <p><strong>Venue:</strong> Lab 2</p>
+                <p><strong>Fee:</strong> ₹120</p>
+                <p class="open">Status: Open</p>
+            </div>
+
+            <div class="card">
+                <h3>Gaming Tournament</h3>
+                <p><strong>ID:</strong> E105</p>
+                <p><strong>Category:</strong> Gaming</p>
+                <p><strong>Date:</strong> 13 Feb 2026 - 1PM</p>
+                <p><strong>Venue:</strong> Arena</p>
+                <p><strong>Fee:</strong> ₹250</p>
+                <p class="open">Status: Open</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container">
+
+        <h2>Student Registration Form</h2>
+
+        <form id="registrationForm">
+
+            <input type="text" id="studentName" placeholder="Student Name">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <input type="text" id="mobile" placeholder="Mobile Number">
+
+            <input type="text" id="regno" placeholder="Registration Number">
+
+            <select id="event">
+                <option value="">Select Event</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="AI Workshop">AI Workshop</option>
+                <option value="Paper Presentation">Paper Presentation</option>
+                <option value="Web Design">Web Design</option>
+                <option value="Gaming Tournament">Gaming Tournament</option>
+            </select>
+
+            <select id="participationType">
+                <option value="">Participation Type</option>
+                <option value="Individual">Individual</option>
+                <option value="Team">Team</option>
+            </select>
+
+            <input type="text" id="teamName" placeholder="Team Name">
+
+            <input type="number" id="teamSize" placeholder="Team Size">
+
+            <textarea id="teamMembers" placeholder="Enter Team Member Names"></textarea>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <div id="message"></div>
+
+        <div id="participantDetails"></div>
+
+        <h3>Total Registrations: <span id="count">0</span></h3>
+
+    </section>
+
+    <footer>
+        <p>Contact: technova@email.com | +91 0000000000 | Amrita Vishwa Vidyapeetham, Bengaluru</p>
+        <p>&copy UID Hackathon</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
